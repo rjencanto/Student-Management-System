@@ -14,17 +14,10 @@ function Home(){
         .catch(err=> console.log(err));
       } , []);
 
-      const handleDelete = (name) =>{
-        axios.delete('http://localhost:3001/delete/' +name)
-        .then(()=> {
-            setStudents(prevStudents => prevStudents.filter(s => s.name !== name));
-          //  location.reload();
-        })
-        .catch(err=> console.log(err));
-      }
+     
 
     
-    return(
+  return(
         <div className='d-flex 100vh bg-primary justify-content-center align-items-center'>
             <div className='w-50 bg-white rounded p-3'>
                 <h2 className= "text-center">Student List</h2>
@@ -69,6 +62,7 @@ function Home(){
         </div>
     );
 }
+
 
 
 export default Home
