@@ -15,9 +15,7 @@ function Home(){
       } , []);
 
      
-
-    
-  return(
+ return(
         <div className='d-flex 100vh bg-primary justify-content-center align-items-center'>
             <div className='w-50 bg-white rounded p-3'>
                 <h2 className= "text-center">Student List</h2>
@@ -66,3 +64,4 @@ function Home(){
 
 
 export default Home
+
